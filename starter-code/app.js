@@ -14,20 +14,18 @@ app.engine( 'hbs', hbs( {
 }));
 
 //routing pages
-app.get('/', function(req, res, next) {
+app.get('/', (req, res) =>{
   res.render('home');
 });
 
 app.get ('/about', (req, res) => {
   res.render('about' );
-})
+});
 
 app.get ('/contact', (req, res) => {
   res.render('contact');
-})
+});
 
 
 //localhost listener
-app.listen(3000, () =>{
-   console.log('My first app listening on port 3000!')
-});
+app.listen(3000,)
